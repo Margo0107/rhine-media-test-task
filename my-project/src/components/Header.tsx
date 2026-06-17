@@ -1,14 +1,15 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { GradientButton, OutlineButton } from "./ui/Buttons";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-1 border-[var(--b0)] bg-[var(--bg-0)]/90 px-4 py-4 backdrop-blur-lg md:px-6 md:py-[21px]">
+    <header className="fixed top-0 left-0 z-50 w-full border-1 border-b border-[var(--b0)] bg-[var(--bg-0)]/90 px-4 py-4 backdrop-blur-lg md:px-6 md:py-[21px]">
       <div className="mx-auto flex max-w-[1240px] items-center justify-between">
         {/* Logo */}
-        <a href="index.html">
+        <Link to="/">
           <div className="flex items-center gap-2">
             <div className="logo-mark flex h-8 w-8 items-center justify-center rounded-lg [background-image:var(--g-gold)] text-xs font-bold text-[var(--bg-0)] md:h-9 md:w-9">
               RM
@@ -17,7 +18,7 @@ export default function Header() {
               Rhine <span className="text-[var(--gold)]">Media</span>
             </div>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop navigation */}
         <ul className="hidden items-center gap-[30px] lg:flex">
@@ -54,16 +55,19 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="contact.html" className="text-[15px] text-[var(--t2)] hover:text-[var(--t1)]">
+            <Link
+              to="/contact"
+              className="text-[15px] text-[var(--t2)] hover:text-[var(--t1)]"
+            >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
         {/* Desktop buttons */}
         <div className="hidden items-center gap-3 lg:flex">
           <OutlineButton className="max-w-[144px]">
-            Get in Touch
+            <Link to="/contact">Get in Touch</Link>
           </OutlineButton>
           <GradientButton className="max-w-[181px]">
             Start Cooperation
@@ -93,6 +97,7 @@ export default function Header() {
           ></span>
         </button>
       </div>
+      
 
       {/* Mobile menu overlay */}
       <div
@@ -107,7 +112,6 @@ export default function Header() {
             <li>
               <a
                 href="#hero"
-                onClick={() => setMenuOpen(false)}
                 className="text-lg font-medium text-[var(--t2)] hover:text-[var(--t1)]"
               >
                 Verticals
@@ -116,7 +120,6 @@ export default function Header() {
             <li>
               <a
                 href="#traffic"
-                onClick={() => setMenuOpen(false)}
                 className="text-lg font-medium text-[var(--t2)] hover:text-[var(--t1)]"
               >
                 Traffic Sources
@@ -125,7 +128,6 @@ export default function Header() {
             <li>
               <a
                 href="#partners"
-                onClick={() => setMenuOpen(false)}
                 className="text-lg font-medium text-[var(--t2)] hover:text-[var(--t1)]"
               >
                 Partners
@@ -134,27 +136,28 @@ export default function Header() {
             <li>
               <a
                 href="#why-us"
-                onClick={() => setMenuOpen(false)}
                 className="text-lg font-medium text-[var(--t2)] hover:text-[var(--t1)]"
               >
                 Why Us
               </a>
             </li>
             <li>
-              <a
-                href="contact.html"
-                onClick={() => setMenuOpen(false)}
+              <Link
+                to="/contact"
                 className="text-lg font-medium text-[var(--t2)] hover:text-[var(--t1)]"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="flex flex-col items-center gap-4">
-            <OutlineButton className="w-[200px]" onClick={() => setMenuOpen(false)}>
+            <Link
+              to="/contact"
+              className="inline-flex w-[200px] items-center justify-center rounded-full border border-slate-800/70 px-8 py-[15px] text-[14px] font-semibold tracking-[0.01em] whitespace-nowrap text-white transition duration-300 ease-out hover:-translate-y-0.5 hover:border-[var(--border-g)] hover:bg-[var(--gold-glow)]/10 hover:text-[var(--gold-lt)]"
+            >
               Get in Touch
-            </OutlineButton>
-            <GradientButton className="w-[200px]" onClick={() => setMenuOpen(false)}>
+            </Link>
+            <GradientButton className="w-[200px]">
               Start Cooperation
             </GradientButton>
           </div>

@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import CtaSection from "./components/CtaSection";
 import HeroSection from "./components/HeroSection";
 import PartnersMarqueeSection from "./components/PartnersSection";
@@ -7,8 +8,9 @@ import TrafficSourcesSection from "./components/TrafficSection";
 import VerticalsSection from "./components/VerticalsSection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import ContactSection from "./components/contact/ContactSection";
 
-function App() {
+function HomePage() {
   return (
     <>
       <div>
@@ -19,7 +21,7 @@ function App() {
           <HeroSection />
         </div>
       </main>
-      <div className="border-t border-b border-white/5 bg-[var(--bg-1)]  background: linear-gradient(145deg, #0D1630 0%, #09112A 100%);">
+      <div className="background: linear-gradient(145deg, #0D1630 0%, #09112A 100%); border-t border-b border-white/5 bg-[var(--bg-1)]">
         <div className="mx-auto w-full max-w-[1200px]">
           <StatsBandSection />
         </div>
@@ -35,7 +37,7 @@ function App() {
         <PartnersMarqueeSection />
       </div>
       <div className="bg-[var(--bg-1)]">
-        {/* <StuggeretCards /> */}
+        <StuggeretCards />
       </div>
       <div className="text-[var(--bg-0)]">
         <CtaSection />
@@ -44,6 +46,15 @@ function App() {
         <Footer />
       </div>
     </>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/contact" element={<ContactSection />} />
+    </Routes>
   );
 }
 
