@@ -1,19 +1,19 @@
 export default function PartnersMarqueeSection() {
   return (
-    <section className="partners overflow-hidden py-24">
+    <section id="partners" className="partners overflow-hidden py-24">
       <div className="mx-auto mb-12 px-6">
         <div className="mb-16 space-y-3 text-center">
           <div className="flex items-center justify-center gap-2">
             <div className="h-[2px] w-[18px] rounded-full bg-amber-500"></div>
-            <p className="text-center text-xs font-bold tracking-[0.14em] text-amber-400 uppercase">
+            <p className="text-center text-xs font-bold tracking-[0.14em] text-[var(--gold)] uppercase">
               Trusted Partners & Networks
             </p>
           </div>
           <h2 className="text-5xl font-black tracking-[-0.03em] text-white">
             Working with the{" "}
-            <span className="text-amber-400">Best in Class</span>
+            <span className="text-[var(--gold)]">Best in Class</span>
           </h2>
-          <p className="mx-auto max-w-[760px] text-base leading-[1.75] text-slate-400">
+          <p className="mx-auto max-w-[760px] text-base leading-[1.75] text-[var(--t2)]">
             We maintain direct relationships with premium ad networks, affiliate
             networks and CPA platforms worldwide.
           </p>

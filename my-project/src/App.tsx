@@ -14,12 +14,12 @@ function App() {
       <div>
         <Header />
       </div>
-      <main className="flex items-center justify-center px-20 py-12 pb-30 text-white">
+      <main className="flex items-center justify-center px-20 py-35 pb-30 text-white">
         <div className="w-full max-w-[1200px]">
           <HeroSection />
         </div>
       </main>
-      <div className="border-t border-b border-white/5 bg-[var(--bg-1)]">
+      <div className="border-t border-b border-white/5 bg-[var(--bg-1)]  background: linear-gradient(145deg, #0D1630 0%, #09112A 100%);">
         <div className="mx-auto w-full max-w-[1200px]">
           <StatsBandSection />
         </div>
@@ -30,14 +30,14 @@ function App() {
       <div className="bg-slate-950">
         <TrafficSourcesSection />
       </div>
-      <div className="bg-gray-950">
+      <div className="bg-[var(--bg-0)]">
         {" "}
         <PartnersMarqueeSection />
       </div>
-      <div className="bg-slate-950">
-        <StuggeretCards />
+      <div className="bg-[var(--bg-1)]">
+        {/* <StuggeretCards /> */}
       </div>
-      <div className="bg-gray-950">
+      <div className="text-[var(--bg-0)]">
         <CtaSection />
       </div>
       <div>

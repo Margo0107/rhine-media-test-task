@@ -44,6 +44,7 @@
     rgba(62, 114, 236, 0.08) 0%,
     transparent 70%
   );
+  --bg-cta: linear-gradient(145deg, #0d1630 0%, #09112a 100%);
 
   /* Typography */
   --f-head: "Manrope", sans-serif;
@@ -70,6 +71,7 @@ html {
   font-family: var(--f-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -77,6 +79,7 @@ body {
   font-family: var(--f-body);
   background: var(--bg-0);
   color: var(--t1);
+  overflow-x: hidden;
 }
 
 h1,
@@ -132,7 +135,7 @@ h6 {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--bg-card);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 2rem;
   padding: 10px 4px;
@@ -152,7 +155,7 @@ h6 {
   border-radius: 0.3rem;
   display: grid;
   place-items: center;
-  background: rgba(51, 51, 61, 0.445);
+  background: var(--gold-dim);
 
   font-size: 0.9rem;
 }

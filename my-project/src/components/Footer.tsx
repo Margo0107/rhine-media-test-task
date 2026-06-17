@@ -1,50 +1,50 @@
 export default function Footer() {
   return (
-    <footer className="border-1 border-slate-900 text-slate-300">
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+    <footer className="border-1 border-[var(--b0)] text-slate-300">
+      <div className="mx-auto max-w-7xl px-11 pt-15 pb-8">
+        <div className="mb-18 grid grid-cols-1 gap-4 md:grid-cols-5">
           {/* Brand column */}
-          <div className="space-y-4">
-            <a className="inline-flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-amber-500 font-bold text-slate-900">
+          <div className="col-span-2 flex flex-col gap-6">
+            <a className="m-0 flex items-center gap-2">
+              <div className="logo-mark flex h-9 w-9 items-center justify-center rounded-lg [background-image:var(--g-gold)] text-xs font-bold text-[var(--bg-0)]">
                 RM
               </div>
               <div className="text-lg font-semibold text-white">
-                Rhine <span className="text-amber-400">Media</span>
+                Rhine <span className="text-[var(--gold)]">Media</span>
               </div>
             </a>
-            <p className="max-w-xs text-sm text-slate-400">
+            <p className="m-0 max-w-[281px] text-[13.8px] tracking-[0.80px] text-[var(--t2)]">
               Premium performance media buying for the world's most ambitious
               advertisers and affiliate partners. Built for scale. Optimised for
               ROI.
             </p>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
               <a
                 href="#"
                 aria-label="Telegram"
-                className="rounded-md bg-white/3 px-2 py-1 text-sm text-slate-300 hover:bg-white/6"
+                className="rounded-md border-1 border-[var(--b0)] bg-[var(--bg-card)] px-3 py-2 text-sm text-[var(--t2)] hover:border-[var(--border-g)] hover:bg-[var(--gold-dim)] hover:text-[var(--gold)]"
               >
                 ✈
               </a>
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="rounded-md bg-white/3 px-2 py-1 text-sm text-slate-300 hover:bg-white/6"
+                className="rounded-md border-1 border-[var(--b0)] bg-[var(--bg-card)] px-3 py-2 text-sm text-[var(--t2)] hover:border-[var(--border-g)] hover:bg-[var(--gold-dim)] hover:text-[var(--gold)]"
               >
                 in
               </a>
               <a
                 href="#"
                 aria-label="Twitter"
-                className="rounded-md bg-white/3 px-2 py-1 text-sm text-slate-300 hover:bg-white/6"
+                className="rounded-md border-1 border-[var(--b0)] bg-[var(--bg-card)] px-3 py-2 text-sm text-[var(--t2)] hover:border-[var(--border-g)] hover:bg-[var(--gold-dim)] hover:text-[var(--gold)]"
               >
                 𝕏
               </a>
               <a
                 href="#"
                 aria-label="Skype"
-                className="rounded-md bg-white/3 px-2 py-1 text-sm text-slate-300 hover:bg-white/6"
+                className="rounded-md border-1 border-[var(--b0)] bg-[var(--bg-card)] px-3 py-2 text-sm text-[var(--t2)] hover:border-[var(--border-g)] hover:bg-[var(--gold-dim)] hover:text-[var(--gold)]"
               >
                 ☁
               </a>
@@ -52,15 +52,15 @@ export default function Footer() {
           </div>
 
           {/* Vertical links */}
-          <div>
-            <h4 className="mb-4 text-xs font-semibold tracking-wider text-white">
+          <div className="">
+            <h4 className="mb-4 text-[13px] font-semibold tracking-wider text-white">
               VERTICALS
             </h4>
-            <ul className="space-y-3 text-sm">
+            <ul className="flex flex-col gap-5 text-sm">
               <li>
                 <a
                   href="#verticals"
-                  className="text-slate-400 hover:text-slate-300"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
                 >
                   Dating Traffic
                 </a>
@@ -68,7 +68,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#verticals"
-                  className="text-slate-300 hover:text-white"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
                 >
                   Nutra Campaigns
                 </a>
@@ -76,7 +76,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#verticals"
-                  className="text-slate-300 hover:text-white"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
                 >
                   Gambling / iGaming
                 </a>
@@ -84,7 +84,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#verticals"
-                  className="text-slate-300 hover:text-white"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
                 >
                   Sweepstakes
                 </a>
@@ -92,7 +92,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#verticals"
-                  className="text-slate-300 hover:text-white"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
                 >
                   Crypto Offers
                 </a>
@@ -100,7 +100,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#verticals"
-                  className="text-slate-300 hover:text-white"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
                 >
                   Adult
                 </a>
@@ -109,72 +109,96 @@ export default function Footer() {
           </div>
 
           {/* Traffic sources */}
-          <div>
-            <h4 className="mb-4 text-xs font-semibold tracking-wider text-slate-400">
+          <div className="md:col-span-1">
+            <h4 className="mb-4 text-[13px] font-semibold tracking-wider text-white">
               TRAFFIC SOURCES
             </h4>
-            <ul className="space-y-3 text-sm">
+            <ul className="flex flex-col gap-5 text-sm">
               <li>
-                <a href="#traffic" className="text-slate-300 hover:text-white">
+                <a
+                  href="#traffic"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
+                >
                   Google Ads
                 </a>
               </li>
               <li>
-                <a href="#traffic" className="text-slate-300 hover:text-white">
+                <a
+                  href="#traffic"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
+                >
                   Meta Ads
                 </a>
               </li>
               <li>
-                <a href="#traffic" className="text-slate-300 hover:text-white">
+                <a
+                  href="#traffic"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
+                >
                   TikTok Ads
                 </a>
               </li>
               <li>
-                <a href="#traffic" className="text-slate-300 hover:text-white">
+                <a
+                  href="#traffic"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
+                >
                   PropellerAds
                 </a>
               </li>
               <li>
-                <a href="#traffic" className="text-slate-300 hover:text-white">
+                <a
+                  href="#traffic"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
+                >
                   Native Ads
                 </a>
               </li>
               <li>
-                <a href="#traffic" className="text-slate-300 hover:text-white">
-                  Push &amp; Pop
+                <a
+                  href="#traffic"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
+                >
+                  Push & Pop
                 </a>
               </li>
             </ul>
           </div>
 
           {/* Company */}
-          <div>
-            <h4 className="mb-4 text-xs font-semibold tracking-wider text-slate-400">
+          <div className="md:col-span-1">
+            <h4 className="mb-4 text-[13px] font-semibold tracking-wider text-white">
               COMPANY
             </h4>
-            <ul className="space-y-3 text-sm">
+            <ul className="flex flex-col gap-5 text-sm">
               <li>
-                <a href="#why-us" className="text-slate-300 hover:text-white">
+                <a
+                  href="#why-us"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
+                >
                   About Rhine Media
                 </a>
               </li>
               <li>
                 <a
                   href="contact.html"
-                  className="text-slate-300 hover:text-white"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
                 >
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#partners" className="text-slate-300 hover:text-white">
+                <a
+                  href="#partners"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
+                >
                   Partners
                 </a>
               </li>
               <li>
                 <a
                   href="terms.html"
-                  className="text-slate-300 hover:text-white"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
                 >
                   Terms of Service
                 </a>
@@ -182,7 +206,7 @@ export default function Footer() {
               <li>
                 <a
                   href="privacy-policy.html"
-                  className="text-slate-300 hover:text-white"
+                  className="text-[var(--t2)] hover:text-[var(--gold)]"
                 >
                   Privacy Policy
                 </a>
@@ -191,28 +215,27 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-white/5 pt-6">
+        <div className="border-t border-[var(--b0)] pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-sm text-slate-500">
-              © 2026 Rhine Media. All rights reserved.{" "}
-              <span className="text-slate-400">rhine-media.com</span>
+            <p className="text-[12.8px] text-[var(--t3)]">
+              © 2026 Rhine Media. All rights reserved. rhine-media.com
             </p>
-            <nav className="flex items-center gap-6 text-sm">
+            <nav className="flex items-center gap-5 text-sm">
               <a
                 href="terms.html"
-                className="text-slate-500 hover:text-slate-300"
+                className="text-[13px] text-[var(--t3)] hover:text-[var(--t2)]"
               >
                 Terms
               </a>
               <a
                 href="privacy-policy.html"
-                className="text-slate-500 hover:text-slate-300"
+                className="text-[13px] text-[var(--t3)] hover:text-[var(--t2)]"
               >
                 Privacy
               </a>
               <a
                 href="contact.html"
-                className="text-slate-500 hover:text-slate-300"
+                className="text-[13px] text-[var(--t3)] hover:text-[var(--t2)]"
               >
                 Contact
               </a>

@@ -1,6 +1,6 @@
 export default function StuggeretCards() {
   return (
-    <section className="features py-30">
+    <section id="why-us" className="features py-30">
       <div className="mx-auto max-w-7xl px-6">
         <div className="feat-layout">
           {/* Left: content + checklist */}
@@ -8,15 +8,15 @@ export default function StuggeretCards() {
             <div className="sec-sub">
               <div className="mb-4 flex items-center gap-2">
                 <div className="h-[2px] w-[18px] rounded-full bg-amber-500"></div>
-                <p className="text-[11px] font-bold tracking-[0.14em] text-amber-400 uppercase">
+                <p className="text-[11px] font-bold tracking-[0.14em] text-[var(--gold)] uppercase">
                   Why Choose Rhine Media
                 </p>
               </div>
               <h2 className="text-[45px]/[52px] font-black tracking-[-0.03em] text-white">
                 Precision. Scale.{" "}
-                <span className="text-amber-400">Performance.</span>
+                <span className="text-[var(--gold)]">Performance.</span>
               </h2>
-              <p className="mt-4 max-w-lg text-base/7 text-slate-400">
+              <p className="mt-4 max-w-lg text-base/7 text-[var(--t2)]">
                 We're not a media network — we're your in-house buying team.
                 Deep expertise, real accountability and transparent reporting on
                 every dollar spent.
@@ -28,7 +28,7 @@ export default function StuggeretCards() {
                 <div className="chk">✓</div>
                 <div className="chk-body">
                   <h4>Full Funnel Optimization</h4>
-                  <p>
+                  <p className="text-[var(--t2)]">
                     From creative A/B testing to post-click landing page
                     optimization. Every touchpoint tracked and improved
                     continuously.
@@ -40,7 +40,7 @@ export default function StuggeretCards() {
                 <div className="chk">✓</div>
                 <div className="chk-body">
                   <h4>Real-Time Performance Scaling</h4>
-                  <p>
+                  <p className="text-[var(--t2)]">
                     Algorithms automatically adjust bids, placements, and
                     targeting based on live conversion metrics.
                   </p>
@@ -51,7 +51,7 @@ export default function StuggeretCards() {
                 <div className="chk">✓</div>
                 <div className="chk-body">
                   <h4>Dedicated Account Management</h4>
-                  <p>
+                  <p className="text-[var(--t2)]">
                     You get a senior strategist who owns your campaigns and
                     optimizes them weekly.
                   </p>
@@ -62,7 +62,7 @@ export default function StuggeretCards() {
                 <div className="chk">✓</div>
                 <div className="chk-body">
                   <h4>Transparent Reporting</h4>
-                  <p>
+                  <p className="text-[var(--t2)]">
                     Dashboard access, weekly calls, and detailed breakdowns. No
                     black boxes here.
                   </p>
