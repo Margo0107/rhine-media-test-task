@@ -5,16 +5,21 @@ import StuggeretCards from "./components/StaggeretCards";
 import StatsBandSection from "./components/StatsBandSection";
 import TrafficSourcesSection from "./components/TrafficSection";
 import VerticalsSection from "./components/VerticalsSection";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <main className="flex min-h-screen items-center justify-center bg-gray-950 px-20 py-30 text-white">
+      <div>
+        <Header />
+      </div>
+      <main className="flex items-center justify-center px-20 py-12 pb-30 text-white">
         <div className="w-full max-w-[1200px]">
           <HeroSection />
         </div>
       </main>
-      <div className="border-t border-b border-white/10 bg-slate-950">
+      <div className="border-t border-b border-white/5 bg-[var(--bg-1)]">
         <div className="mx-auto w-full max-w-[1200px]">
           <StatsBandSection />
         </div>
@@ -36,7 +41,7 @@ function App() {
         <CtaSection />
       </div>
       <div>
-        <footer />
+        <Footer />
       </div>
     </>
   );

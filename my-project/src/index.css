@@ -2,10 +2,6 @@
 @import "tailwindcss";
 
 :root {
-  /* Typography */
-  --f-head: "Manrope", sans-serif;
-  --f-body: "Inter", sans-serif;
-
   /* Background scale */
   --bg-0: #05070e;
   --bg-1: #080c18;
@@ -13,7 +9,7 @@
   --bg-card: #101826;
   --bg-card-h: #141f30;
 
-  /* Gold accent */
+  /* Gold accent (FR champagne) */
   --gold: #c9973b;
   --gold-lt: #e6b85c;
   --gold-dim: rgba(201, 151, 59, 0.12);
@@ -34,10 +30,40 @@
   --b0: rgba(255, 255, 255, 0.04);
   --b1: rgba(255, 255, 255, 0.08);
 
+  /* Gradients */
+  --h1-gold: linear-gradient(120deg, #c9973b 0%, #ecc86a 45%, #c9973b 100%);
+  --g-gold: linear-gradient(90deg, #c9973b 0%, #e6b85c 100%);
+  --g-blue: linear-gradient(90deg, #3e72ec 0%, #6090ff 100%);
+  --g-card: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    transparent 100%
+  );
+  --g-hero: radial-gradient(
+    ellipse 80% 60% at 70% 40%,
+    rgba(62, 114, 236, 0.08) 0%,
+    transparent 70%
+  );
+
+  /* Typography */
+  --f-head: "Manrope", sans-serif;
+  --f-body: "Inter", sans-serif;
+
+  /* Spacing */
+  --sec-py: 110px;
+  --c-max: 1240px;
+  --c-px: 24px;
+
   /* Easing */
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --tf: 0.2s var(--ease);
-  --tm: 0.5s var(--ease);
+  --tm: 0.45s var(--ease);
+
+  /* Radius */
+  --r-s: 8px;
+  --r-m: 14px;
+  --r-l: 20px;
+  --r-xl: 28px;
 }
 
 html {
@@ -72,8 +98,20 @@ h6 {
   overflow: hidden;
   padding: 1rem 0;
 
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
 }
 
 .partners .marquee-track {
@@ -142,6 +180,50 @@ h6 {
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* Hero section background */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 12, 23, 0.95) 0%,
+    rgba(6, 10, 22, 1) 100%
+  );
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 20% 18%,
+      rgba(62, 114, 236, 0.16),
+      transparent 18%
+    ),
+    radial-gradient(
+      circle at 80% 24%,
+      rgba(255, 197, 74, 0.08),
+      transparent 25%
+    );
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -12%;
+  top: -10%;
+  width: 560px;
+  height: 560px;
+  background: radial-gradient(
+    circle,
+    rgba(62, 114, 236, 0.08),
+    transparent 65%
+  );
+  pointer-events: none;
 }
 
 /* Features section with staggered cards */
@@ -248,4 +330,64 @@ h6 {
   font-size: 0.82rem;
   color: var(--t2);
   line-height: 1.65;
+}
+
+/* Theme helper utilities (convenience classes) */
+.text-primary {
+  color: var(--t1);
+}
+.text-muted {
+  color: var(--t2);
+}
+.text-dim {
+  color: var(--t3);
+}
+
+.bg-0 {
+  background: var(--bg-0);
+}
+.bg-1 {
+  background: var(--bg-1);
+}
+.bg-2 {
+  background: var(--bg-2);
+}
+.bg-card {
+  background: var(--bg-card);
+}
+.bg-card-h {
+  background: var(--bg-card-h);
+}
+
+.accent-gold {
+  color: var(--gold);
+}
+.bg-gold {
+  background: var(--gold);
+  color: #081014;
+}
+.border-gold {
+  border-color: var(--border-g);
+}
+
+.grad-gold {
+  background: var(--g-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.grad-blue {
+  background: var(--g-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Small helpers for footer spacing if needed */
+.container-center {
+  max-width: var(--c-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--c-px);
+  padding-right: var(--c-px);
 }

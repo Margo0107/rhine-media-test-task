@@ -14,7 +14,7 @@ export default function StatsBandSection() {
           </span>
         </div>
 
-        <div className="border-l border-white/10 pl-20 p-2 py-2 text-center">
+        <div className="border-l border-white/5 pl-20 p-2 py-2 text-center">
           <p className="bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-300 bg-clip-text text-4xl font-extrabold tracking-[-0.03em] text-transparent">
             340%
           </p>
@@ -26,7 +26,7 @@ export default function StatsBandSection() {
           </span>
         </div>
 
-        <div className="border-r border-l border-white/10 p-15 pl-14 py-2 text-center">
+        <div className="border-r border-l border-white/5 p-15 pl-14 py-2 text-center">
           <p className="bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-300 bg-clip-text text-4xl font-extrabold tracking-[-0.03em] text-transparent">
             7
           </p>
