@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { GradientButton, OutlineButton } from "./ui/Buttons";
+import { GradientButton, OutlineButton } from "../ui/Buttons";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

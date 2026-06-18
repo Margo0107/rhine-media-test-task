@@ -1,4 +1,4 @@
-import { GradientButton, OutlineButton } from "./ui/Buttons";
+import { GradientButton, OutlineButton } from "../../ui/Buttons";
 
 export default function HeroSection() {
   return (
@@ -9,10 +9,10 @@ export default function HeroSection() {
           Performance Media Buying Team
         </div>
 
-        <h1 className="text-[42px] leading-[1.05] font-black tracking-[-0.03em] text-white sm:text-[58px] lg:text-[79px] lg:leading-[0.95]">
+        <h1 className="text-[42px] leading-[1.05] font-black tracking-[-0.03em] text-[var(--t1)] sm:text-[58px] lg:text-[79px] lg:leading-[0.95]">
           <span className="block">Performance Media</span>
 
-          <span className="block">
+          <span className="block text-[var(--t1)]">
             Buying Team |{" "}
             <span className="[background-image:var(--h1-gold)] bg-clip-text text-transparent">
               Rhine

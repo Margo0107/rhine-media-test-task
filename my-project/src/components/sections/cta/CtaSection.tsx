@@ -1,4 +1,4 @@
-import { GradientButton, OutlineButton } from "./ui/Buttons";
+import { GradientButton, OutlineButton } from "../../ui/Buttons";
 
 export default function CtaSection() {
   return (

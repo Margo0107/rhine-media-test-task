@@ -1,10 +1,7 @@
-import Header from "../Header";
-
 export default function ContactSection() {
   return (
     <>
-      <Header />
-      <section className="border-1 border-[var(--b0)] bg-[var(--bg-1)] p-89 pt-39 pb-20">
+      <section className="border-1 border-[var(--b0)] bg-[var(--bg-1)] p-88 pt-39 pb-20">
         <div className="flex flex-col items-start">
           <div className="mb-3 flex items-center justify-center gap-2">
             <div className="h-[2px] w-[18px] rounded-full bg-[var(--gold)]"></div>
@@ -33,11 +30,12 @@ export default function ContactSection() {
       </section>
 
       {/* contact main section */}
+      {/* left-info */}
       <div>
-        <h3>
+        <h3 className="text-[var(--t1)]">
           Let's Build Something
           <br />
-          <span>Profitable Together</span>
+          <span className="text-[var(--g-gold)]">Profitable Together</span>
         </h3>
         <p>
           Whether you're an advertiser looking to scale your offers, an
@@ -79,6 +77,22 @@ export default function ContactSection() {
         <div>
           <h4>Response Time</h4>
           <p>Typically within 2–4 business hours</p>
+        </div>
+      </div>
+
+      <div>
+        <p>Also available on</p>
+        <a href="#">Skype</a>
+        <a href="#"> WhatsApp</a>
+        <a href="#">LinkedIn</a>
+      </div>
+
+      {/* map-placeholder */}
+      <div>
+        <div>
+          {" "}
+          <div>ico</div>
+          <span>Rhine Media · Global Operations</span>
         </div>
       </div>
     </>
