@@ -4,7 +4,9 @@ export default function HeroSection() {
   return (
     <section className="mx-auto flex w-full max-w-[850px] flex-col gap-8 px-4 py-4 text-white sm:px-6 lg:px-9">
       <div className="flex flex-col items-start gap-4 text-left">
-        <div className="mb-3 inline-flex w-fit items-center gap-3 rounded-full border border-[var(--border-g)] bg-[var(--gold-dim)] px-3.5 py-[9px] text-[9px] font-bold tracking-[0.25em] text-[var(--gold)] uppercase sm:text-[10px]">
+        <div className="mb-3 inline-flex w-fit items-center gap-3 rounded-full border border-[var(--border-g)]
+  
+         px-3.5 py-[9px] text-[9px] font-bold tracking-[0.25em] text-[var(--gold)] uppercase sm:text-[10px]">
           <div className="h-2 w-2 animate-pulse rounded-full bg-[var(--gold)]"></div>
           Performance Media Buying Team
         </div>

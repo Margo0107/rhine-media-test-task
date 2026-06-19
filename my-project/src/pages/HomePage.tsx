@@ -14,8 +14,15 @@ export default function HomePage() {
       <div>
         <Header />
       </div>
-      <main className="flex items-center justify-center px-20 py-35 pb-30 text-white">
-        <div className="w-full max-w-[1200px]">
+      <main className="relative flex items-center justify-center overflow-hidden bg-[linear-gradient(rgba(62,114,236,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(62,114,236,0.055)_1px,transparent_1px)] bg-[length:64px_64px] px-20 py-35 pb-30">
+        {/* right */}
+        <div className="pointer-events-none absolute top-[-220px] right-[-160px] z-0 h-[680px] w-[680px] bg-[radial-gradient(circle,rgba(30,65,170,0.22)_0%,transparent_68%)] blur-[75px]"></div>
+        {/* left */}
+        <div className="pointer-events-none absolute bottom-[80px] left-[5%] z-0 h-[420px] w-[420px] bg-[radial-gradient(circle,rgba(201,151,59,0.10)_0%,transparent_70%)] blur-[95px]"></div>
+        {/* center */}
+        <div className="pointer-events-none absolute top-[50%] left-[38%] z-0 h-[280px] w-[280px] bg-[radial-gradient(circle,rgba(62,114,236,0.12)_0%,transparent_70%)] blur-[75px]"></div>
+
+        <div className="relative z-10 w-full max-w-[1200px]">
           <HeroSection />
         </div>
       </main>
