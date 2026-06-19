@@ -63,7 +63,7 @@ export default function VerticalsSection() {
       <div className="mx-auto max-w-[1240px] px-6">
         <div className="mb-16 space-y-3">
           <div className="flex items-center justify-center gap-2">
-            <div className="h-[2px] w-[18px] rounded-full bg-amber-500"></div>
+            <div className="h-[2px] w-[18px] rounded-full"></div>
             <p className="text-center text-xs font-bold tracking-[0.14em] text-[var(--gold)] uppercase">
               Our Verticals
             </p>

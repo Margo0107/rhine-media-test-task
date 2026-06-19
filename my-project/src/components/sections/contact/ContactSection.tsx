@@ -1,4 +1,5 @@
 import ContactForm from "./ContactForm";
+import FaqSection from "./FaqSection";
 
 export default function ContactSection() {
   return (
@@ -32,8 +33,8 @@ export default function ContactSection() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[var(--bg-0)] py-[80px]">
-        <div className="container-center relative z-10 grid items-start gap-[45px] lg:grid-cols-[0.82fr_1.18fr]">
+      <section className="relative overflow-hidden bg-[var(--bg-0)]">
+        <div className="container-center relative z-10 grid items-start gap-[45px] lg:grid-cols-[0.82fr_1.18fr] py-[80px]">
           <div className="max-w-[470px]">
             <div>
               <h3 className="mb-[13px] text-[24.8px] leading-7 font-bold text-[var(--t1)]">
@@ -152,9 +153,11 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-
+          {/* contact form */}
           <ContactForm />
         </div>
+        {/* FAQ section */}
+        <FaqSection />
       </section>
     </>
   );
