@@ -33,7 +33,7 @@ export default function ContactSection() {
       </section>
 
       <section className="relative overflow-hidden bg-[var(--bg-0)] py-[80px]">
-        <div className="container-center relative z-10 grid items-start gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-[64px]">
+        <div className="container-center relative z-10 grid items-start gap-[45px] lg:grid-cols-[0.82fr_1.18fr]">
           <div className="max-w-[470px]">
             <div>
               <h3 className="mb-[13px] text-[24.8px] leading-7 font-bold text-[var(--t1)]">
@@ -117,28 +117,28 @@ export default function ContactSection() {
               <p className="mb-[8px] text-[13.28px] font-semibold tracking-[0.05em] text-[var(--t3)] uppercase">
                 Also available on
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-[8px]">
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center rounded-full border border-[var(--b1)] px-5 py-3 text-[13px] font-semibold tracking-[0.01em] whitespace-nowrap text-[var(--t1)] transition duration-300 ease-out hover:-translate-y-0.5 hover:border-[var(--border-g)] hover:bg-[var(--gold-glow)]/10 hover:text-[var(--gold-lt)]"
+                  className="inline-flex items-center justify-center rounded-full border border-[var(--b1)] p-[18px] py-[10px] text-[12.8px] leading-[1.65] font-bold tracking-[0.01em] whitespace-nowrap text-[var(--t1)] transition duration-300 ease-out hover:-translate-y-0.5 hover:border-[var(--border-g)] hover:bg-[var(--gold-glow)]/10 hover:text-[var(--gold-lt)]"
                 >
                   Skype
                 </a>
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center rounded-full border border-[var(--b1)] px-5 py-3 text-[13px] font-semibold tracking-[0.01em] whitespace-nowrap text-[var(--t1)] transition duration-300 ease-out hover:-translate-y-0.5 hover:border-[var(--border-g)] hover:bg-[var(--gold-glow)]/10 hover:text-[var(--gold-lt)]"
+                  className="inline-flex items-center justify-center rounded-full border border-[var(--b1)] p-[18px] py-[10px] text-[12.8px] leading-[1.65] font-bold tracking-[0.01em] whitespace-nowrap text-[var(--t1)] transition duration-300 ease-out hover:-translate-y-0.5 hover:border-[var(--border-g)] hover:bg-[var(--gold-glow)]/10 hover:text-[var(--gold-lt)]"
                 >
                   WhatsApp
                 </a>
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center rounded-full border border-[var(--b1)] px-5 py-3 text-[13px] font-semibold tracking-[0.01em] whitespace-nowrap text-[var(--t1)] transition duration-300 ease-out hover:-translate-y-0.5 hover:border-[var(--border-g)] hover:bg-[var(--gold-glow)]/10 hover:text-[var(--gold-lt)]"
+                  className="inline-flex items-center justify-center rounded-full border border-[var(--b1)] p-[18px] py-[10px] text-[12.8px] leading-[1.65] font-bold tracking-[0.01em] whitespace-nowrap text-[var(--t1)] transition duration-300 ease-out hover:-translate-y-0.5 hover:border-[var(--border-g)] hover:bg-[var(--gold-glow)]/10 hover:text-[var(--gold-lt)]"
                 >
                   LinkedIn
                 </a>
               </div>
             </div>
-            <div className="mt-[36px] overflow-hidden rounded-[18px] bg-[var(--bg-card)] max-w-[449px]">
+            <div className="mt-[36px] max-w-[449px] overflow-hidden rounded-[18px] bg-[var(--bg-card)]">
               <div className="relative flex min-h-[218px] items-center justify-center bg-[linear-gradient(rgba(62,114,236,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(62,114,236,0.055)_1px,transparent_1px)] bg-[length:28px_28px]">
                 <div className="relative flex flex-col items-center gap-3 text-center">
                   <div className="relative h-9 w-9">
