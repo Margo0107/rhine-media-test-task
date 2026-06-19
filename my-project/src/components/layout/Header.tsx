@@ -1,12 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { GradientButton, OutlineButton } from "../ui/Buttons";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 8);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-1 border-b border-[var(--b0)] bg-[var(--bg-0)]/90 px-4 py-4 backdrop-blur-lg md:px-6 md:py-[21px]">
+    <header
+      className={`fixed top-0 left-0 z-50 w-full border-b px-4 py-4 transition-all duration-300 md:px-6 md:py-[21px] ${
+        scrolled || menuOpen
+          ? "border-[var(--b0)] bg-[var(--bg-0)]/90 backdrop-blur-lg"
+          : "border-transparent bg-transparent"
+      }`}
+    >
       <div className="mx-auto flex max-w-[1240px] items-center justify-between">
         {/* Logo */}
         <Link to="/">

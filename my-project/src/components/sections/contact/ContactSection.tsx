@@ -1,8 +1,11 @@
+import ContactForm from "./ContactForm";
+
 export default function ContactSection() {
   return (
     <>
-      <section className="border-1 border-[var(--b0)] bg-[var(--bg-1)] p-88 pt-39 pb-20">
-        <div className="flex flex-col items-start">
+      <section className="border-1 border-[var(--b0)] bg-[var(--bg-1)] py-[79px] pt-39">
+        <div className="pointer-events-none absolute top-[-80px] right-[-80px] h-[400px] w-[400px] rounded-full bg-[radial-gradient(circle,rgba(62,114,236,0.07)_0%,transparent_70%)]"></div>
+        <div className="container-center flex flex-col items-start">
           <div className="mb-3 flex items-center justify-center gap-2">
             <div className="h-[2px] w-[18px] rounded-full bg-[var(--gold)]"></div>
             <p className="text-[11.6px] font-bold tracking-[0.14em] text-[var(--gold)] uppercase">
@@ -29,72 +32,130 @@ export default function ContactSection() {
         </div>
       </section>
 
-      {/* contact main section */}
-      {/* left-info */}
-      <div>
-        <h3 className="text-[var(--t1)]">
-          Let's Build Something
-          <br />
-          <span className="text-[var(--g-gold)]">Profitable Together</span>
-        </h3>
-        <p>
-          Whether you're an advertiser looking to scale your offers, an
-          affiliate network seeking a reliable buying team, or a brand ready to
-          expand globally — we want to hear from you.
-        </p>
-      </div>
+      <section className="relative overflow-hidden bg-[var(--bg-0)] py-[80px]">
+        <div className="container-center relative z-10 grid items-start gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-[64px]">
+          <div className="max-w-[470px]">
+            <div>
+              <h3 className="mb-[13px] text-[24.8px] leading-7 font-bold text-[var(--t1)]">
+                Let's Build Something
+                <br />
+                <span className="text-[var(--gold)]">Profitable Together</span>
+              </h3>
+              <p className="mb-[40px] max-w-[430px] text-[14.88px] leading-[1.75] text-[var(--t2)]">
+                Whether you're an advertiser looking to scale your offers, an
+                affiliate network seeking a reliable buying team, or a brand
+                ready to expand globally — we want to hear from you.
+              </p>
+            </div>
 
-      <div>
-        <div>✈</div>
-        <div>
-          <h4>Telegram</h4>
-          <a href="/" target="_blank">
-            @rhinemedia
-          </a>
+            <section className="mb-[40px] flex flex-col gap-[22px]">
+              <div className="flex items-center gap-[14px]">
+                <div className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-[10px] border border-[var(--b0)] bg-[var(--bg-card)] text-[16px] text-[var(--t1)]">
+                  ✈
+                </div>
+                <div>
+                  <h4 className="mb-[5px] text-[12px] leading-[1.12] font-bold tracking-[0.07em] text-[var(--t3)] uppercase">
+                    Telegram
+                  </h4>
+                  <a
+                    href="/"
+                    target="_blank"
+                    className="text-[14.72px] leading-[1.65] font-normal text-[var(--t1)]"
+                  >
+                    @rhinemedia
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-[14px]">
+                <div className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-[10px] border border-[var(--b0)] bg-[var(--bg-card)] text-[16px] text-[var(--t1)]">
+                  ✉️
+                </div>
+                <div>
+                  <h4 className="mb-[5px] text-[12px] leading-[1.12] font-bold tracking-[0.07em] text-[var(--t3)] uppercase">
+                    Email
+                  </h4>
+                  <a
+                    href="/"
+                    className="text-[14.72px] leading-[1.65] font-normal text-[var(--t1)]"
+                  >
+                    <span>hello@rhine-media.com</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="mb-[40px] flex items-center gap-[14px]">
+                <div className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-[10px] border border-[var(--b0)] bg-[var(--bg-card)] text-[16px] text-[var(--t1)]">
+                  💼
+                </div>
+                <div>
+                  <h4 className="mb-[5px] text-[12px] leading-[1.12] font-bold tracking-[0.07em] text-[var(--t3)] uppercase">
+                    Business Hours
+                  </h4>
+                  <p className="text-[14.72px] leading-[1.65] font-normal text-[var(--t1)]">
+                    Mon – Fri · 09:00 – 20:00 CET
+                  </p>
+                </div>
+              </div>
+
+              <div className="mb-[40px] flex items-center gap-[14px]">
+                <div className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-[10px] border border-[var(--b0)] bg-[var(--bg-card)] text-[16px] text-[var(--t1)]">
+                  ⚡
+                </div>
+                <div>
+                  <h4 className="mb-[4px] text-[12px] leading-[1.12] font-bold tracking-[0.07em] text-[var(--t3)] uppercase">
+                    Response Time
+                  </h4>
+                  <p className="text-[14.72px] leading-[1.65] font-normal text-[var(--t1)]">
+                    Typically within 2–4 business hours
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <div>
+              <p className="mb-[8px] text-[13.28px] font-semibold tracking-[0.05em] text-[var(--t3)] uppercase">
+                Also available on
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center rounded-full border border-[var(--b1)] px-5 py-3 text-[13px] font-semibold tracking-[0.01em] whitespace-nowrap text-[var(--t1)] transition duration-300 ease-out hover:-translate-y-0.5 hover:border-[var(--border-g)] hover:bg-[var(--gold-glow)]/10 hover:text-[var(--gold-lt)]"
+                >
+                  Skype
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center rounded-full border border-[var(--b1)] px-5 py-3 text-[13px] font-semibold tracking-[0.01em] whitespace-nowrap text-[var(--t1)] transition duration-300 ease-out hover:-translate-y-0.5 hover:border-[var(--border-g)] hover:bg-[var(--gold-glow)]/10 hover:text-[var(--gold-lt)]"
+                >
+                  WhatsApp
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center rounded-full border border-[var(--b1)] px-5 py-3 text-[13px] font-semibold tracking-[0.01em] whitespace-nowrap text-[var(--t1)] transition duration-300 ease-out hover:-translate-y-0.5 hover:border-[var(--border-g)] hover:bg-[var(--gold-glow)]/10 hover:text-[var(--gold-lt)]"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+            <div className="mt-[36px] overflow-hidden rounded-[18px] bg-[var(--bg-card)] max-w-[449px]">
+              <div className="relative flex min-h-[218px] items-center justify-center bg-[linear-gradient(rgba(62,114,236,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(62,114,236,0.055)_1px,transparent_1px)] bg-[length:28px_28px]">
+                <div className="relative flex flex-col items-center gap-3 text-center">
+                  <div className="relative h-9 w-9">
+                    <div className="absolute top-1 left-1/2 h-[32px] w-[32px] -translate-x-1/2 rotate-315 rounded-[50%_50%_50%_0] border border-[var(--border-g)] bg-[var(--gold-dim)]"></div>
+                    <div className="absolute top-[14px] left-1/2 h-[12px] w-[12px] -translate-x-1/2 rounded-full bg-[var(--gold)]"></div>
+                  </div>
+                  <span className="text-[13px] text-[var(--t3)]">
+                    Rhine Media · Global Operations
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ContactForm />
         </div>
-      </div>
-
-      <div>
-        <div>✉️</div>
-        <div>
-          <h4>Email</h4>
-          <a href="/">
-            <span>hello@rhine-media.com</span>
-          </a>
-        </div>
-      </div>
-
-      <div>
-        <div>💼</div>
-        <div>
-          <h4>Business Hours</h4>
-          <p>Mon – Fri &nbsp;·&nbsp; 09:00 – 20:00 CET</p>
-        </div>
-      </div>
-
-      <div>
-        <div>⚡</div>
-        <div>
-          <h4>Response Time</h4>
-          <p>Typically within 2–4 business hours</p>
-        </div>
-      </div>
-
-      <div>
-        <p>Also available on</p>
-        <a href="#">Skype</a>
-        <a href="#"> WhatsApp</a>
-        <a href="#">LinkedIn</a>
-      </div>
-
-      {/* map-placeholder */}
-      <div>
-        <div>
-          {" "}
-          <div>ico</div>
-          <span>Rhine Media · Global Operations</span>
-        </div>
-      </div>
+      </section>
     </>
   );
 }
