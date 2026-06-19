@@ -346,3 +346,35 @@ h6 {
   padding-left: var(--c-px);
   padding-right: var(--c-px);
 }
+
+.checkbox-form {
+  accent-color: var(--gold);
+  position: relative;
+  color: var(--t1);
+  background: var(--bg-2);
+  border: 1px solid var(--b1);
+  border-radius: var(--r-s);
+  font-size: 0.91rem;
+  padding: 13px 15px;
+  transition: var(--tm);
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.checkbox-form:checked {
+  accent-color: var(--gold);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 151, 59, 0.1);
+}
+.checkbox-form::after {
+  content: "\2714";
+  position: absolute;
+  color: var(--gold);
+  font-size: 16px;
+  top: 0;
+  left: 9px;
+  display: none;
+}
+.checkbox-form:checked::after {
+  display: block;
+}
